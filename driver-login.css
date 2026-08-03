@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGIN CONTAINER */
+
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 20px;
+}
+
+/* FORM */
+
+#driverLoginForm {
+    background: white;
+    padding: 35px 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#driverLoginForm h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+/* INPUTS */
+
+#driverLoginForm input {
+    width: 100%;
+
+    padding: 13px 15px;
+    margin-bottom: 16px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    font-size: 15px;
+    outline: none;
+}
+
+#driverLoginForm input:focus {
+    border-color: #2563eb;
+}
+
+/* BUTTON */
+
+#driverLoginForm button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #00c258;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#driverLoginForm button:hover {
+    background: #009642;
+}
+
+/* REGISTER LINK */
+#driverLoginForm p {
+    text-align: center;
+    margin-top: 20px;
+
+    color: #666;
+    font-size: 14px;
+}
+
+#driverLoginForm a {
+    color: #009642;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#driverLoginForm a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+    .login-container {
+        padding: 15px;
+    }
+
+    #driverLoginForm {
+        padding: 28px 22px;
+    }
+
+    #driverLoginForm h2 {
+        font-size: 22px;
+    }
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Driver Dashboard | Ride Right</title>
+
+    <link rel="stylesheet" href="driver-dashboard.css">
+</head>
+<body>
+
+<header class="dashboard-header">
+    <h2>Ride Right Driver Dashboard</h2>
+
+    <button id="logoutBtn">Logout</button>
+</header>
+
+<main class="dashboard-container">
+
+    <section class="welcome-card">
+        <h1>Welcome, <span id="driverName">Driver</span> 👋</h1>
+        <p>Manage your rides and driver account.</p>
+    </section>
+
+    <section class="driver-info">
+
+        <h2>Driver Information</h2>
+
+        <p>
+            <strong>Name:</strong>
+            <span id="name"></span>
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <span id="email"></span>
+        </p>
+
+        <p>
+            <strong>Vehicle Type:</strong>
+            <span id="vehicleType"></span>
+        </p>
+
+        <p>
+            <strong>Vehicle Number:</strong>
+            <span id="vehicleNumber"></span>
+        </p>
+
+    </section>
+
+    <section class="dashboard-actions">
+
+        <div class="action-card">
+            <h3>🚗 Ride Requests</h3>
+            <p>View available ride requests.</p>
+            <button id="viewRidesBtn" href="driver-ride.html">
+                View Rides
+            </button>
+        </div>
+
+        <div class="action-card">
+            <h3>📍 Live Location</h3>
+            <p>Update your availability and location.</p>
+            <button id="locationBtn">
+                Update Location
+            </button>
+        </div>
+
+        <div class="action-card">
+            <h3>💰 Earnings</h3>
+            <p>View your driver earnings.</p>
+            <button id="earningsBtn">
+                View Earnings
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="driver-dashboard.js"></script>
+<script src="driver-auth-check.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Right</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Ride Right</h2>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="book.html">Book Ride</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="driver.html">Drivers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Signup</a>
+            </div>
+
+            <button class="menu-btn" id="menuBtn">&#9776</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ride Anywhere, Anytime</h1>
+            <p>Fast, safe and affordable rides at your fingertips.</p>
+
+            <a href="book.html" class="btn">Book a Ride</a>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking">
+
+        <h2>Book Your Ride</h2>
+
+        <form class="booking-form">
+
+            <div class="form-group">
+                <label for="pickup">Pickup Location</label>
+                <input type="text" id="pickup" placeholder="Pickup Location">
+            </div>
+            
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" placeholder="Destination">
+            </div>
+           
+            <div class="form-group">
+                <label for="rideType">Ride Type</label>
+                <select id="rideType" name="rideType">
+                    <option value="Economy">Economy</option>
+                    <option value="Comfort">Comfort</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Luxury">Luxury</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="rideDate">Ride Date</label>
+                <input type="date" id="rideDate" name="rideDate">
+            </div>
+            
+            <button type="submit">Find Ride</button>
+
+        </form>
+
+    </section>
+
+    <section class="popular-destinations">
+
+    <h2>Popular Destinations</h2>
+    <p>Choose one of our most visited locations.</p>
+
+    <div class="destination-grid">
+
+        <div class="destination-card" data-location="Murtala Muhammed Airport">
+            <h3>✈️ Airport</h3>
+            <p>Murtala Muhammed Airport</p>
+        </div>
+
+        <div class="destination-card" data-location="Ikeja City Mall">
+            <h3>🛍️ Shopping Mall</h3>
+            <p>Ikeja City Mall</p>
+        </div>
+
+        <div class="destination-card" data-location="University of Lagos">
+            <h3>🎓 University</h3>
+            <p>University of Lagos</p>
+        </div>
+
+        <div class="destination-card" data-location="Eko Hotel & Suites">
+            <h3>🏨 Hotel</h3>
+            <p>Eko Hotel & Suites</p>
+        </div>
+
+        <div class="destination-card" data-location="Victoria Island">
+            <h3>🏢 Business District</h3>
+            <p>Victoria Island</p>
+        </div>
+
+        <div class="destination-card" data-location="Lekki Phase 1">
+            <h3>🌴 Leisure</h3>
+            <p>Lekki Phase 1</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🚗 Economy</h3>
+                <p>Affordable everyday rides.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚙 Comfort</h3>
+                <p>Premium rides with extra comfort.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚐 XL</h3>
+                <p>More seats for groups.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- How it Works -->
+    <section class="steps">
+
+        <h2>How It Works</h2>
+
+        <div class="step-box">
+            <div class="step">1. Enter Pickup</div>
+            <div class="step">2. Choose Ride</div>
+            <div class="step">3. Driver Arrives</div>
+            <div class="step">4. Enjoy Your Trip</div>
+        </div>
+
+    </section>
+
+    <!-- Become a Driver -->
+    <section class="driver">
+
+        <h2>Become a Driver</h2>
+
+        <p>Earn money by driving with Ride Right.</p>
+
+        <a href="driver.html" class="btn">Register as Driver</a>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section class="reviews">
+
+        <h2>Customer Reviews</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                ⭐⭐⭐⭐⭐
+                <p>"Excellent service!"</p>
+            </div>
+
+            <div class="card">
+                ⭐⭐⭐⭐⭐
+                <p>"Drivers are always on time."</p>
+            </div>
+
+            <div class="card">
+                ⭐⭐⭐⭐⭐
+                <p>"Affordable and safe."</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+    <p>Need help? Our support team is available 24/7.</p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <p>📞 Phone: +234 800 123 4567</p>
+
+            <p>📧 Email: support@rideright.com</p>
+
+            <p>📍 Location: Lagos, Nigeria</p>
+
+            <p>🕒 Working Hours: 24/7</p>
+
+        </div>
+
+
+        <form id="contactForm" class="contact-form">
+
+            <input 
+            type="text" 
+            id="name" 
+            placeholder="Your Name" 
+            required>
+
+
+            <input 
+            type="email" 
+            id="email" 
+            placeholder="Your Email" 
+            required>
+
+
+            <textarea 
+            id="message" 
+            placeholder="Your Message"
+            required></textarea>
+
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+   <!-- Footer -->
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-box">
+
+            <h2>Ride Right</h2>
+
+            <p>
+            Fast, safe and affordable rides anytime, anywhere.
+            </p>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+            <a href="#">Book Ride</a>
+            <a href="#">Services</a>
+            <a href="#">Drivers</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Support</h3>
+
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+
+        <div class="footer-box">
+
+            <h3>Follow Us</h3>
+
+            <div class="socials">
+
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">X</a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Ride Right. All Rights Reserved.
+
+    </div>
+</footer>
+
+<script src="index.js"></script>
+<script src="auth-check.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Account | Ride Right</title>
+
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+
+<header class="account-header">
+
+    <h2>Ride Right</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="book.html">Book a Ride</a>
+        <button id="logoutBtn">Logout</button>
+    </nav>
+
+</header>
+
+<main class="account-container">
+
+    <section class="welcome-card">
+
+        <h1>
+            Welcome, <span id="userName">User</span> 👋
+        </h1>
+
+        <p>Manage your Ride Right account.</p>
+
+    </section>
+
+
+    <section class="account-info">
+
+        <h2>Account Information</h2>
+
+        <div class="info-row">
+            <strong>Name:</strong>
+            <span id="name"></span>
+        </div>
+
+        <div class="info-row">
+            <strong>Email:</strong>
+            <span id="email"></span>
+        </div>
+
+    </section>
+
+
+    <section class="account-actions">
+
+        <div class="action-card">
+
+            <h3>🚗 Book a Ride</h3>
+
+            <p>Book your next ride.</p>
+
+            <button id="bookRideBtn">
+                Book Ride
+            </button>
+
+        </div>
+
+
+        <div class="action-card">
+
+            <h3>📋 Ride History</h3>
+
+            <p>View your previous rides.</p>
+
+            <button id="rideHistoryBtn">
+                View History
+            </button>
+
+        </div>
+
+
+        <div class="action-card">
+
+            <h3>⚙️ Account Settings</h3>
+
+            <p>Manage your account.</p>
+
+            <button id="settingsBtn">
+                Settings
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="auth-check.js"></script>
+<script src="account.js"></script>
+
+</body>
+</html>
