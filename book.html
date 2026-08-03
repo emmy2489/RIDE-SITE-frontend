@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Ride - Ride Right</title>
+    <title>Book a Ride - Connect</title>
     <link rel="stylesheet" href="book.css">
 </head>
 <body>
 
 <header>
-    <h2>Ride Right</h2>
+    <h2>Connect</h2>
 </header>
 
 <div class="container">
@@ -22,15 +22,17 @@
 
         <input type="text" id="destination" placeholder="Destination" required>
 
-        <select id="rideType">
+        <select id="rideType" name="rideType" aria-label="Ride Type">
             <option value="Economy">Economy</option>
             <option value="Comfort">Comfort</option>
             <option value="SUV">SUV</option>
             <option value="Luxury">Luxury</option>
         </select>
 
+        <label for="rideDate">Ride Date</label>
         <input type="date" id="rideDate" required>
 
+        <label for="rideTime">Ride Time</label>
         <input type="time" id="rideTime" required>
 
         <section class="fare-section">
@@ -40,7 +42,7 @@
                 
                 <input type="number" id="distance" placeholder="Distance (KM)" min="1">
                 
-                <select id="rideType">
+                <select id="fareRideType" name="fareRideType" aria-label="Ride Type">
                     <option value="Economy">Economy</option>
                     <option value="Comfort">Comfort</option>
                     <option value="SUV">SUV</option>

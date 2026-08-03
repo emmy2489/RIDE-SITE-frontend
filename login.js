@@ -9,7 +9,7 @@ form.addEventListener("submit", async (e) => {
 
     try{
 
-        const response = await fetch("https://ride-site-backend.onrender.com/api/auth/login",{
+        const response = await fetch("https://ride-site-backend-1.onrender.com/api/auth/login",{
 
             method:"POST",
 
@@ -30,8 +30,6 @@ form.addEventListener("submit", async (e) => {
 
             localStorage.setItem("token", data.token);
             localStorage.setItem("user", JSON.stringify(data.user));
-
-            window.location.href = "account.html"
 
             alert("Login Successful!");
 

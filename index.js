@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
     const destination = form.querySelectorAll("input")[1].value;
     const rideType = form.querySelector("select").value;
 
-    const response = await fetch("https://ride-site-backend.onrender.com/api/rides/book", {
+    const response = await fetch("https://ride-site-backend-1.onrender.com/api/rides/book", {
 
         method: "POST",
 

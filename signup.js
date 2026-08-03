@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
 
     try{
 
-        const response = await fetch("https://ride-site-backend.onrender.com/api/auth/register",{
+        const response = await fetch("https://ride-site-backend-1.onrender.com/api/auth/register",{
 
             method:"POST",
 
