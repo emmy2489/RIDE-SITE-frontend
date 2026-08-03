@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
     const destination = form.querySelectorAll("input")[1].value;
     const rideType = form.querySelector("select").value;
 
-    const response = await fetch("http://localhost:5000/api/rides/book", {
+    const response = await fetch("https://ride-site-backend.onrender.com/api/rides/book", {
 
         method: "POST",
 
@@ -90,7 +90,7 @@ cards.forEach(card => {
 const footer = document.querySelector("footer p");
 
 if (footer) {
-    footer.innerHTML = `© ${new Date().getFullYear()} Ride Right. All Rights Reserved.`;
+    footer.innerHTML = `© ${new Date().getFullYear()} Connect. All Rights Reserved.`;
 }
 
 //Popular Destination

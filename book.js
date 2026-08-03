@@ -22,7 +22,7 @@ form.addEventListener("submit", async (e) => {
 
         const token = localStorage.getItem("token");
         
-        const response = await fetch("http://localhost:5000/api/rides/book",{
+        const response = await fetch("https://ride-site-backend.com/api/rides/book",{
 
             method:"POST",
 
@@ -74,7 +74,7 @@ estimateBtn.addEventListener("click", async () => {
 
     try {
 
-        const response = await fetch("http://localhost:5000/api/fare/estimate", {
+        const response = await fetch("https://ride-site-backend.onrender.com/api/fare/estimate", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

@@ -16,7 +16,7 @@ driverForm.addEventListener("submit", async (event) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/drivers/register",
+            "https://ride-site-backend.onrender.com/api/drivers/register",
             {
                 method: "POST",
 
